@@ -13,6 +13,5 @@ else:
         if nota == 6 or nota == 5:
             nota = "C"
         else:
-            if nota < 5:
-                nota = "D"
+            nota = "D"
 print(nota)
