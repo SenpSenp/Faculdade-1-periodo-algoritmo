@@ -11,5 +11,4 @@ salario20 = salario * 1.20
 if tempo <= 1:
     print(f"Seu salário vai ser de {salario10:.2f}")
 else:
-    if tempo > 1:
-        print(f"Seu salário vai ser de {salario20:.2f}")
+    print(f"Seu salário vai ser de {salario20:.2f}")

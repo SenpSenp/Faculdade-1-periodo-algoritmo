@@ -10,13 +10,12 @@ if idade < 4:
     print("Você é um bebê")
 else:
     if idade < 10:
-    print("Você é uma criança")
-else:
-    if idade < 18:
-        print("Você é um adolescente")
+        print("Você é uma criança")
     else:
-        if idade < 50:
-            print("Você é um adulto")
+        if idade < 18:
+            print("Você é um adolescente")
         else:
-            if idade > 50:
+            if idade < 50:
+                print("Você é um adulto")
+            else:
                 print("Você é um idoso")
