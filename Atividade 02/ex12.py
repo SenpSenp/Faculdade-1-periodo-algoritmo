@@ -27,5 +27,4 @@ else:
                 if tempo < 5:
                     print("10% de jusros")
                 else:
-                    if tempo >= 5:
-                        print("5% de juros")
+                    print("5% de juros")
