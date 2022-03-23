@@ -3,29 +3,41 @@
 
 mes = int(input("Digite o número de um mes: "))
 
-if mes == 1:
-    print("Janeiro")
-if mes == 2:
-    print("Fevereiro")
-if mes == 3:
-    print("Março")
-if mes == 4:
-    print("Abril")
-if mes == 5:
-    print("Maio")
-if mes == 6:
-    print("Junho")
-if mes == 7:
-    print("Julho")
-if mes == 8:
-    print("Agosto")
-if mes == 9:
-    print("Setembro")
-if mes == 10:
-    print("Outubro")
-if mes == 11:
-    print("Novembro")
-if mes == 12:
-    print("Dezembro")
 if mes < 1 or mes > 12:
     print("Mes invalido")
+else:
+    if mes == 1:
+        print("Janeiro")
+    else:
+        if mes == 2:
+            print("Fevereiro")
+        else:
+            if mes == 3:
+                print("Março")
+            else:
+                if mes == 4:
+                    print("Abril")
+                else:
+                    if mes == 5:
+                        print("Maio")
+                    else:
+                        if mes == 6:
+                            print("Junho")
+                        else:
+                            if mes == 7:
+                                print("Julho")
+                            else:
+                                if mes == 8:
+                                    print("Agosto")
+                                else:
+                                    if mes == 9:
+                                        print("Setembro")
+                                    else:
+                                        if mes == 10:
+                                            print("Outubro")
+                                        else:
+                                            if mes == 11:
+                                                print("Novembro")
+                                            else:
+                                                if mes == 12:
+                                                    print("Dezembro")
