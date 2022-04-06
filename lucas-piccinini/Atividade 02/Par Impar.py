@@ -11,17 +11,17 @@ if modo_de_jogo < 0 or modo_de_jogo > 1:
 else:
     if modo_de_jogo == 0:
         jogador2 = (randint(0, 1))
-        resultado = (jogador1 + jogador2) / 2
+        resultado = (jogador1 + jogador2) % 2
         if tipo < 0 or tipo > 1:
             print("Apenas é aceito 0 e 1 como modo")
         else:
             if tipo == 0:
-                if resultado == True:
+                if resultado == 0:
                     vencedor = "Jogador 1"
                 else:
                     vencedor = "Máquina"
             else:
-                if resultado == True:
+                if resultado == 0:
                     vencedor = "Máquina"
                 else:
                     vencedor = "Jogador 1"
@@ -29,14 +29,15 @@ else:
         jogador2 = int(input("Jogador 2, escolha um número:"))
         resultado = (jogador1 + jogador2) / 2
         if tipo == 0:
-            if resultado == True:
+            if resultado == 0:
                 vencedor = "Jogador 1"
             else:
                 vencedor = "Jogador 2"
         else:
-            if resultado == True:
+            if resultado == 0:
                 vencedor = "Jogador 2"
             else:
                 vencedor = "Jogador 1"
 
-print(f"Jogador 1 jogou {jogador1}, Jogador 2 jogou {jogador2}, Vencedor: {vencedor}")
+print(f"{jogador1} + {jogador2} = {jogador1+jogador2:.2f}")
+print(f"Vencedor: {vencedor}")
